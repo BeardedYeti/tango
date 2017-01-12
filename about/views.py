@@ -3,4 +3,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def about(request):
-	return HttpResponse("About says hey there partner! <br/> <a href='/rango/'>Index</a>")
+	context_dict = {'Pickles': "Kitty no like pickles!"}
+
+	return render(request, 'about/about.html', context=context_dict)
