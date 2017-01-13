@@ -1,0 +1,9 @@
+# Node
+node_modules
+.npm
+
+# Machine Specific
+*.pyc
+
+# Database
+db.sqlite3
